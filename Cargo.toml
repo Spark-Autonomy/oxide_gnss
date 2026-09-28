@@ -2,7 +2,7 @@
 name = "oxide_gnss"
 version = "0.2.1"
 edition = "2021"
-authors = ["Geoff Sokoll <geoff.s@greenforgelabs.com.au>"]
+authors = ["Geoff Sokoll <geoff@sparkautonomy.com>"]
 description = "A Rust-based ROS2 GNSS driver with integrated NTRIP client"
 license = "MIT"
 repository = "https://github.com/Spark-Autonomy/oxide_gnss"

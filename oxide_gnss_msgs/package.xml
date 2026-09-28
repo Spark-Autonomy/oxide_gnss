@@ -4,7 +4,7 @@
   <name>oxide_gnss_msgs</name>
   <version>0.1.0</version>
   <description>Message definitions for oxide_gnss GNSS driver</description>
-  <maintainer email="geoff.s@greenforgelabs.com.au">Geoff Sokoll</maintainer>
+  <maintainer email="geoff@sparkautonomy.com">Geoff Sokoll</maintainer>
   <license>MIT</license>
 
   <url type="repository">https://github.com/Spark-Autonomy/oxide_gnss</url>
