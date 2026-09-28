@@ -53,7 +53,7 @@ jobs:
             arch: arm64
             runner: ubuntu-24.04-arm
     container:
-      image: ghcr.io/greenforge-labs/oxide_gnss-ci:${{ matrix.distro }}-${{ matrix.arch }}
+      image: ghcr.io/spark-autonomy/oxide_gnss-ci:${{ matrix.distro }}-${{ matrix.arch }}
       options: --user root
 
     steps:
@@ -104,7 +104,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     container:
-      image: ghcr.io/greenforge-labs/oxide_gnss-ci:jazzy-amd64
+      image: ghcr.io/spark-autonomy/oxide_gnss-ci:jazzy-amd64
       options: --user root
 
     steps:
@@ -135,14 +135,6 @@ jobs:
           source install/setup.bash
           cd src/oxide_gnss
           cargo llvm-cov --features ros2 --lcov --output-path lcov.info
-
-      - name: Upload to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          files: src/oxide_gnss/lcov.info
-          fail_ci_if_error: false
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   # Rolling CI disabled - ros2-rust API not yet stable on rolling
   # Re-enable when rclrs matures and rosidl_runtime_rs stabilizes

@@ -1,6 +1,6 @@
 # oxide_gnss
 
-[![CI](https://github.com/greenforge-labs/oxide_gnss/actions/workflows/ci.yml/badge.svg)](https://github.com/greenforge-labs/oxide_gnss/actions/workflows/ci.yml)
+[![CI](https://github.com/Spark-Autonomy/oxide_gnss/actions/workflows/ci.yml/badge.svg)](https://github.com/Spark-Autonomy/oxide_gnss/actions/workflows/ci.yml)
 
 A Rust-based ROS 2 GNSS driver for u-blox receivers (ZED-F9P focus) with an integrated NTRIP client and optional integrity monitoring.  
 
@@ -204,7 +204,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - **[ublox](https://github.com/ublox-rs/ublox)** — UBX protocol parser and serializer for u-blox receivers
 - **[rtcm-rs](https://github.com/martinhakansson/rtcm-rs)** — RTCM 3.x message parsing, by Martin Håkansson
-- **[ntrip-core](https://github.com/greenforge-labs/ntrip-core)** — NTRIP client (also maintained by GreenForge Labs)
+- **[ntrip-core](https://github.com/Spark-Autonomy/ntrip-core)** — NTRIP client (also maintained by Spark Autonomy)
 
 Thanks to the maintainers and contributors of these projects.
 
