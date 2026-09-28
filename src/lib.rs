@@ -46,7 +46,7 @@
 //!
 //! ## Configuration
 //!
-//! See the [configuration documentation](https://github.com/greenforge-labs/oxide_gnss/blob/master/docs/CONFIGURATION.md)
+//! See the [configuration documentation](https://github.com/Spark-Autonomy/oxide_gnss/blob/master/docs/CONFIGURATION.md)
 //! for full details on YAML configuration options.
 //!
 //! ## ROS2 Topics

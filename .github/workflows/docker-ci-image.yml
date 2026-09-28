@@ -40,7 +40,9 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-ci
+  # GHCR needs a lowercase name. github.repository gives Spark-Autonomy/oxide_gnss,
+  # so the name is written out. Keep it equal to the container image in ci.yml.
+  IMAGE_NAME: spark-autonomy/oxide_gnss-ci
 
 jobs:
   build-and-push:
