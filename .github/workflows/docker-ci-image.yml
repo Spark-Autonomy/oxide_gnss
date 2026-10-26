@@ -26,7 +26,6 @@ on:
           - humble
           - jazzy
           - kilted
-          - rolling
 
   # Auto-trigger when Dockerfile changes
   push:
@@ -62,10 +61,6 @@ jobs:
             runner: ubuntu-latest
           - distro: kilted
             ros_base: ros:kilted-ros-base
-            arch: amd64
-            runner: ubuntu-latest
-          - distro: rolling
-            ros_base: ros:rolling-ros-base
             arch: amd64
             runner: ubuntu-latest
           # arm64 builds (native runners)
